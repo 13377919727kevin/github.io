@@ -130,10 +130,17 @@
     //     ptimer = setTimeout(starttime,1000); // 添加计时器
     // }
 
-    window.addEventListener('load', function starttime() {
+  //   window.addEventListener('load', function starttime() {
+		// time(h1,'2024,5,12');     // 在一起的时间
+		// ptimer = setTimeout(starttime,1000); // 添加计时器
+  //   });
+
+	// 使用DOMContentLoaded
+   document.addEventListener('DOMContentLoaded', function starttime() {
+		// 初始化代码
 		time(h1,'2024,5,12');     // 在一起的时间
-		ptimer = setTimeout(starttime,1000); // 添加计时器
-    });
+        	ptimer = setTimeout(starttime,1000); // 添加计时器
+   });
 
     function time(obj,futimg){
         var nowtime = new Date().getTime(); // 现在时间转换为时间戳
